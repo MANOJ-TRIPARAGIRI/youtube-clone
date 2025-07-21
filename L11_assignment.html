@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>L_11</title>
+    </head>
+    <style>
+        .maindiv{
+            display: grid;
+            
+            grid-template-columns: 50px 1fr 75px;
+        }
+        .maindiv1{
+            display: grid;
+            grid-template-columns: 50px 1fr 75px;
+        }
+        .maindiv2{
+            display: grid;
+            grid-template-columns: 50px 50px 50px 50px;
+            column-gap: 20px;
+            row-gap: 10px;
+        }
+        .img{
+            margin: 0;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+        }
+        .p1{
+            margin: 0;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        .img2{
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 50px;
+        }
+        .pro{
+            display: grid;
+            grid-template-columns: 30px 1fr;
+            column-gap: 10px;
+            align-items: center;
+            font-size: 18px;
+            color: rgb(91, 89, 89);
+        }
+        .p2{
+            margin: 0;
+        }
+        .b1{
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 15px;
+            font-weight: bold;
+            border: 0;
+            border-radius: 5px;
+            background-color: rgb(30, 90, 253);
+            color: white;
+        }
+        .main{
+            margin-left: 10px;
+            padding-bottom: 10px;
+        }
+        .main1{
+            width: 200px;
+            border: 0;
+            border-radius: 10px;
+            box-shadow: 0px 5px 5px rgba(37, 37, 38, 0.15);
+        }
+        .one{
+            display: grid;
+            grid-template-columns: 200px 200px 200px ;
+            column-gap: 10px;
+            font-family: arial;
+        }
+    </style>
+    <body>
+        <div class="maindiv">
+            <div class="subdiv1" style="background-color: lightpink;">200px</div>
+            <div class="subdiv1" style="background-color: lightskyblue;">75pxpx</div>
+        </div><br>
+
+
+        <div class="maindiv1">
+            <div style="background-color: lightpink;">coll1</div>
+            <div style="background-color: lightskyblue;">coll2</div>
+            <div style="background-color: lightpink;">coll3</div>
+        </div><br><br>
+
+         <div class="maindiv2">
+            <div style="background-color: lightpink;">coll1</div>
+            <div style="background-color: lightskyblue;">coll2</div>
+            <div style="background-color: lightpink;">coll3</div>
+            <div style="background-color: lightskyblue;">coll4</div>
+            <div style="background-color: lightpink;">coll5</div>
+            <div style="background-color: lightskyblue;">coll6</div>
+            <div style="background-color: lightpink;">coll5</div>
+            <div style="background-color: lightskyblue;">coll6</div>
+        </div><br><br>
+
+
+        <div class="one">
+            <div class="main1">
+                <img src="cat_1.webp" class="img">
+                <div class="main">
+                    <p class="p1">Oliver</p>
+                    <div class="pro">
+                        <img src="feast.avif" class="img2">
+                        <p class="p2">2 Mutual friends</p>
+                    </div>
+                    <button class="b1">Add Friend</button>
+                </div>
+            </div>
+            
+            
+            <div class="main1">
+                <img src="feast.avif" class="img">
+                <div class="main">
+                    <p class="p1">Mimi</p>
+                    <div class="pro">
+                        <img src="cat_1.webp" class="img2">
+                        <p class="p2">3 Mutual friends</p>
+                    </div>
+                    <button class="b1">Add Friend</button>
+                </div>
+            </div>
+
+
+             <div class="main1">
+                <img src="Cat_November_2010-1a.jpg.webp" class="img">
+                <div class="main">
+                    <p class="p1">Rex</p>
+                    <div class="pro">
+                        <img src="feast.avif" class="img2">
+                        <p class="p2">4 Mutual friends</p>
+                    </div>
+                    <button class="b1">Add Friend</button>
+                </div>
+            </div>
+            
+        </div>
+
+    </body>
+</html>
