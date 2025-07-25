@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+</head>
+<style>
+    h1{
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+    .name{
+        font-size: 20px;
+        font-weight: 700;
+        display: block;
+        margin-top: 20px;
+    }
+    #name{
+        padding :10px 5px;
+        font-size: 12px;
+        width: 400px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        padding-left: 20px;
+        font-weight: 600;
+        margin-top: 5px;
+    }
+    
+     .Email{
+        font-size: 20px;
+        font-weight: 700;
+        display: block;
+        margin-top: 20px; 
+    }
+    #Email{
+        padding :10px 5px;
+        font-size: 12px;
+        width: 400px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        padding-left: 20px;
+        font-weight: 600;
+        margin-top: 5px;
+        color: gray;
+    }
+    .Messege{
+        font-size: 20px;
+        font-weight: 700;
+        display: block;
+        margin-top: 20px; 
+    }
+    #Messege{
+        font-size: 12px;
+        width: 400px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        padding-left: 20px;
+        font-weight: 600;
+        margin-top: 5px;
+        height: 80px;
+        display: block;
+        color:gray;
+    }
+    .m1{
+        position: relative;
+    }
+    .m2{
+        position: absolute;
+        top: 0;
+        left: 10px;
+        color: gray;
+    }
+    #send{
+        width: 425px;
+        height: 40px;
+        font-size: 20px;
+        font-weight: 700;
+        background-color: rgb(70, 10, 252);
+        color: white;
+        border: 0;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+    body{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(146, 178, 188);   
+    }
+    .contact form{
+        background-color: white;
+        margin-left: 20px;
+        padding: 50px;
+        width: 450px;
+        border-radius: 20px;
+
+    }
+
+</style>
+<body>
+    <div class="contact form">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="49ec23df-87b0-41e9-8dfd-b94a6777eda8">
+        <h1>Contact us</h1>
+            <label for="name" class="name">name</label>
+            <input 
+            name="name"
+            type="text" 
+            id="name"
+            placeholder="your full name "
+            required>
+            
+            <label for="Email" class="Email">Email</label>
+            <input 
+            name="Email"
+            type="text" 
+            id="Email"
+            placeholder="your@email.com "
+            required>
+
+            <label for="messege" class="Messege">Messege</label>
+            <div class="m1">
+                <input
+                name="Messege" 
+                type="text" 
+                id="Messege"
+                required>
+                <div class="m2">your messege...</div>
+            </div>
+            
+            <button id="send" onclick="sendEmail()">Send Messege</button>
+        </form>
+    </div>
+   
+</body>
+</html>
